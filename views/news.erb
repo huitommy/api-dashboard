@@ -1,0 +1,10 @@
+<div class="small-8 small-offset-3 columns">
+  <div class="callout primary">
+    <h1>Top News Articles</h1>
+    <% @articles.each do |art| %>
+      <h5><%= art.section %> Section</h5>
+      <h4><%= art.title %></h4>
+      <p><%= art.abstract%> <a href= "<%=art.url%>"><%= art.url %></a> </p>
+    <%end%>
+  </div>
+</div>

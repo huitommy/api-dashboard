@@ -1,0 +1,14 @@
+<div class="small-12 medium-12 columns">
+  <div class="callout primary">
+    <h1>Events near you</h1>
+    <div class= "row column">
+      <ul>
+        <% @events.each do |event| %>
+        <li>
+          <h3><%= event.title %> @ <%= event.venue %></h3>
+        </li>
+        <%end%>
+      </ul>
+    </div>
+  </div>
+</div>
